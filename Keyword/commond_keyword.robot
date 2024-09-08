@@ -1,6 +1,6 @@
 *** Settings ***
 Library        AppiumLibrary
-Resource       variabled.robot
+Resource       ../Variabled/variabled.robot
 
 *** Keywords ***
 Open application Swag Lab
@@ -34,3 +34,4 @@ Tab username "${username}" to autofill
 Display error message "${error}"
     Wait Until Element Is Visible    //android.widget.TextView[@text="${error}"]
     Element Should Contain Text    //android.widget.TextView[@text="${error}"]    ${error}
+

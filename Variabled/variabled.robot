@@ -4,10 +4,12 @@ ${port}                4723
 ${platformName}        Android
 ${platformVersion}     13
 ${deviceName}          mobile_test
-${appPath}             /Users/sutthasinee.wa/Automate-Mobile/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+${appPath}             ${CURDIR}/../Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
 ${automationName}      UiAutomator2
 ${appActivity}         com.swaglabsmobileapp.SplashActivity
 ${appPackage}          com.swaglabsmobileapp
+${SCREEN_WIDTH}    1080
+${SCREEN_HEIGHT}   2400
 
 ### Location ###
 ## Login page ##
@@ -19,3 +21,4 @@ ${errorMsg}            accessibility_id=test-Error message
 
 ## main page ##
 ${logoApp}            xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.ImageView[2]
+

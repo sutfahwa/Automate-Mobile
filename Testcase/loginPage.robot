@@ -1,7 +1,7 @@
 *** Settings ***
 Library         AppiumLibrary
-Resource        variabled.robot
-Resource        commond_keyword.robot
+Resource        ../Variabled/variabled.robot
+Resource        ../Keyword/commond_keyword.robot
 
 Test Setup       Run keywords
 ...              Open application Swag Lab
