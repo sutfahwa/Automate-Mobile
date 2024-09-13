@@ -55,6 +55,15 @@ Sceanrio: Add Item to cart by select in list view
     Tab cart button in menu bar
     Display product "Sauce Labs Bolt T-Shirt" in cart list row 1
 
+Sceanrio : Remove product out of the cart in your cart page
+    Change view of product
+    Select Item name "Sauce Labs Bolt T-Shirt" in list product to cart
+    Display number of product in cart with 1
+    Tab cart button in menu bar
+    Display product "Sauce Labs Bolt T-Shirt" in cart list row 1
+    Delete product "Sauce Labs Bolt T-Shirt" in cart list row 1
+    Not display product "Sauce Labs Bolt T-Shirt" in cart list
+
 
 
 

@@ -75,6 +75,17 @@ Display product "${productName}" in cart list row ${rowNumber}
     Log    ${text}
     Should Be Equal    ${text}    ${productName}
 
+Delete product "${productName}" in cart list row ${rowNumber}
+    Wait Until Element Is Visible        ${productListInCartList}
+    Scroll Until Element Found //android.widget.TextView[@text="${productName}"]
+    Sleep  0.5s
+    ${list}=    Get Matching Xpath Count    ${productListInCartList}
+    ${text}=    Get Text   xpath=${productListInCartList}//android.view.ViewGroup[@content-desc="test-Description"]\[${rowNumber}]//android.widget.TextView[1]
+    Log    ${text}
+    Should Be Equal    ${text}    ${productName}
+    Wait Until Element Is Visible    xpath=//android.view.ViewGroup[@content-desc="test-REMOVE"][${rowNumber}]
+    Click Element    xpath=//android.view.ViewGroup[@content-desc="test-REMOVE"][${rowNumber}]
+
 Click Remove button below product "${ItemName}"
     Wait Until Element Is Visible     ${productList}
     ${list}=    Get Matching Xpath Count    ${productList}
